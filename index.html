@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web saran</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kotak Saran</h1>
+        <p class="subtitle">Silakan tulis nama dan saran Anda untuk developer.</p>
+
+        <!-- GANTI SCRIPT_URL_ANDA_DI_SINI dengan URL Web App Google Apps Script Anda -->
+        <form id="saran-form"
+            action="https://script.google.com/macros/s/AKfycbx8osTvP0YVa1SIzwJ8XDNVImRmifzduUXuiupXFFnPJUAyQ6jnyFAndRwqxAx0jMH_kQ/exec"
+            method="POST">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Saran</label>
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..."
+                    required></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Kirim Saran</button>
+        </form>
+    </div>
+</body>
+
+</html>
